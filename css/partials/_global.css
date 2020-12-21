@@ -13,7 +13,7 @@
   background: whitesmoke;
   background-clip: padding-box;
   color: black;
-  transition: background.6 ease;
+  transition: background .9s ease-in-out;
   box-shadow: var(--box-shadow);
 }
 
@@ -38,7 +38,7 @@ border-radius: 4px;
   background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
-  transition: background.6 ease;
+  transition: background .9s ease;
   box-shadow: var(--box-shadow);
 }
 
@@ -58,4 +58,7 @@ content: "";
 z-index: -1;
 border-radius: 4px;
 }
-
+p.para{
+  color: var(--text-color);
+  font: normal 18px/30px  var(--roboto);
+}
