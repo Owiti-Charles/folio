@@ -7,6 +7,12 @@
     <!--css-->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    
+    <link href="css/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -21,16 +27,16 @@
                     <div class="mr-auto"></div>
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
+                      <a class="nav-link" href="#work">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
                   </ul>
                 </div>
@@ -38,7 +44,7 @@
         </div>
     </header>
     <main class="site-main">
-        <section class="site-banner">
+        <section id="home" class="site-banner">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 site-title" >
@@ -53,9 +59,9 @@
                         </h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-2 text-capitalize"><i class="fab fa-github fa-2x"></i></button>
-                                <button type="button" class="btn button secondary-button mr-2 text-capitalize"><i class="fab fa-linkedin-in fa-2x"></i></button>
-                                <button type="button" class="btn button primary-button mr-2 text-capitalize">CV</button>
+                                <a href="https://github.com/Owiti-Charles"><button type="button" class="btn button primary-button mr-2 text-capitalize"><i class="fab fa-github"></i></button></a>
+                               <a href="https://www.linkedin.com/in/charles-owiti"><button type="button" class="btn button secondary-button mr-2 text-capitalize"><i class="fab fa-linkedin-in "></i></button></a>
+                                <a href="./cv/Charles_Owiti_CV.pdf " download ><button type="button" class="btn button primary-button mr-2 text-lowecase">cv</button></a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +71,7 @@
                 </div>
             </div>
         </section>  
-        <section class="site-about">
+        <section id="about" class="site-about">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
@@ -89,14 +95,14 @@
                             </p>
                             
                         </div>
-                        <button class="btn button secondary-button">
+                        <a href="./cv/Charles_Owiti_CV.pdf " download><button class="btn button secondary-button">
                             Get CV
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills-area">
+        <section id="skills" class="skills-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xl-6 col-lg-12-col-md-12">
@@ -166,10 +172,10 @@
                             </div>
                             <div class="d-flex flex-row flex-wrap call-area">
                                 <span>
-                                    <i class="fas fa-phone-alt fa-2x"  aria-hidden="true"></i>
+                                    <i class="fas fa-phone-alt fa-2x px-2"  aria-hidden="true"></i>
                                 </span>
                                 <div class="call-now">
-                                    <a href="" class="h4 font-roboto">Call Me</a>
+                                    <a href="" class="h4 font-roboto ahoo">Call Me</a>
                                     <span class="font-roboto py-2">+254704220133</span>
                                 </div>
                             </div>
@@ -179,10 +185,249 @@
                 </div>
             </div>
         </section>
+        <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box text-center">
+                    <h3 class="title folio">Portfolio</h3>
+                    <p class="subtitle folio-a">
+                      Here are some of the projects I have worked on.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/insta.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/insta.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a href="https://instalite.herokuapp.com/"
+                                >Instagram Clone</a
+                              >
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">Django</span> /
+                              <span class="w-date">2019</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/awards.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/awards.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a href="https://chawwards.herokuapp.com/">Site Rating</a>
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">Django</span> /
+                              <span class="w-date">2019</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/gitsearch.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/gitsearch.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a
+                                href="https://owiti-charles.github.io/Git-Search/user-profile"
+                                >Github Search</a
+                              >
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">Angular</span> /
+                              <span class="w-date">2019</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/Screenshot from 2020-09-04 12-39-23.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/Screenshot from 2020-09-04 12-39-23.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a href="https://netfly.netlify.app/">Netflix Clone</a>
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">React</span> /
+                              <span class="w-date">2020</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/hood.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/hood.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a href="https://hood-watchapp.herokuapp.com/">
+                                Nyumba Kumi App</a
+                              >
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">Django</span> /
+                              <span class="w-date">2020</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="work-box">
+                    <a href="img/portfolio/pizza app.png" data-lightbox="gallery-mf">
+                      <div class="work-img">
+                        <img src="img/portfolio/pizza app.png" alt="" class="img-fluid" />
+                      </div>
+                      <div class="work-content">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <h2 class="w-title">
+                              <a
+                                href="https://owiti-charles.github.io/Pizza-Deliciosa"
+                                >Pizza Shop website</a
+                              >
+                            </h2>
+                            <div class="w-more">
+                              <span class="w-ctegory">Web Design</span> /
+                              <span class="w-date">2019</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="w-like">
+                              <span class="ion-ios-plus-outline"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="contact" class="subscribe-us-area pt-5">
+            <div class="container subscribe">
+                <div class="row">
+                    <div class="col-lg-12 text-center subscribe-title">
+                        <h4 class="text-capitalize">Get in Touch with Me!</h4>
+                        <p class="para">If you want to work with me or have any concern, please
+                            feel free to contact me through:</p>
+                    </div>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <form class="w-50">
+                        <div class="row d-flex flex-row flex-wrap">
+                            <div class="col text-white">
+                                <i class="far fa-envelope px-2"></i></i> mikeycharlesm7@gmail.com
+                            </div>
+                            <div class="col text-white">
+                                <i class="fas fa-phone-alt px-2"></i>   +254704220133
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-sm-flex justify-content-center">
+                    <div class="row d-flex flex-row flex-wrap">
+                        <div class="socials">
+                            <a href="https://github.com/Owiti-Charles"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/charles-owiti"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/charles.mikey.1293"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/charles_mikie"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/charles.mikey"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+           <p class="para"> &copy;Copyright <strong>Owiti-Charles</strong>. All Rights
+                  Reserved</p> 
+        </footer>
+          <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>  
+          <div id="preloader"></div>
     </main>
     <!--js-->
     <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="js/js/main.js"></script>
+    <script src="./js/script.js"></script>
+    
 </body>
 </html>

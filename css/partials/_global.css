@@ -13,52 +13,65 @@
   background: whitesmoke;
   background-clip: padding-box;
   color: black;
-  transition: background .9s ease-in-out;
+  transition: background 0.9s ease-in-out;
   box-shadow: var(--box-shadow);
+  font-size: 20px;
 }
 
 .button.primary-button:hover {
-  background:var(--gradient-color);
+  background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
 }
 .primary-button::after {
-position: absolute;
-top: -2px; 
-left: -2px;
-right: -2px;
-bottom: -2px;
-background: var(--gradient-color);
-content: "";
-z-index: -1;
-border-radius: 4px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient-color);
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
 }
 
 .button.secondary-button {
   background: var(--gradient-color);
   background-clip: padding-box;
   color: whitesmoke;
-  transition: background .9s ease;
+  transition: background 0.9s ease;
   box-shadow: var(--box-shadow);
+  font-size: 20px;
 }
 
 .button.secondary-button:hover {
-  background:whitesmoke;
+  background: whitesmoke;
   background-clip: padding-box;
   color: black;
 }
 .secondary-button::after {
-position: absolute;
-top: -2px; 
-left: -2px;
-right: -2px;
-bottom: -2px;
-background: var(--gradient-color);
-content: "";
-z-index: -1;
-border-radius: 4px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient-color);
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
 }
-p.para{
+p.para {
   color: var(--text-color);
-  font: normal 18px/30px  var(--roboto);
+  font: normal 18px/30px var(--roboto);
+}
+.navbar_fixed {
+  position: fixed;
+  width: 100%;
+  top: -1px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  box-shadow: var(--box-shadow);
+  z-index: 999;
+  transition: background 1s ease-in-out;
 }

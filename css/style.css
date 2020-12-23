@@ -1,7 +1,9 @@
 @import url(./fonts.css);
 @import url(./partials/_variables.css);
 @import url(./partials/_global.css);
-
+html {
+  scroll-behavior: smooth;
+}
 .header_area .main_menu .navbar .navbar-brand {
   padding: 0.2rem, 0.5rem;
 }
@@ -33,7 +35,7 @@
 }
 .site-main .site-banner .site-title h3 {
   padding-top: 35%;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
 }
 .site-main .site-banner .site-title h3::after {
@@ -47,9 +49,11 @@
 }
 .site-main .site-banner .site-title h2 {
   font-size: 3rem;
+  font-weight: 400;
 }
 .site-main .site-banner .site-title h4 {
   font-size: 1.5rem;
+  font-weight: 380;
 }
 .site-main .site-banner .banner-image img {
   padding: 7rem 0;
@@ -61,7 +65,7 @@
 }
 .site-main .site-about .about-title h2 {
   font: normal 380 30px/40px var(--roboto);
-  letter-spacing: 6px;
+  letter-spacing: 4px;
 }
 
 .site-main .site-about .about-title .about-me > p {
@@ -115,20 +119,94 @@
   position: absolute;
   left: -190px;
   top: 0px;
-  background: #e029290e;
+  background: #8a7d7d0e;
   width: 380px;
   height: 400px;
   margin-left: 340px;
   z-index: -1;
 }
-.site-main .skills-area .experience-area .years-area .years{
+.site-main .skills-area .experience-area .years-area .years {
   font: normal bold 84px/40px var(--roboto);
   color: var(--primary-color2);
   z-index: 2;
 }
-.site-main .skills-area .experience-area .years-area h2>span{
+.site-main .skills-area .experience-area .years-area h2 > span {
   font: normal 600 21px/30px var(--roboto);
 }
-.site-main .skills-area .experience-area .call-area{
+.site-main .skills-area .experience-area .call-area {
   padding-left: 10rem;
 }
+.call-now a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.call-now a,
+span {
+  font-family: var(--roboto);
+}
+.call-now span {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--text-color);
+}
+.call-now span:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+  transition: transform 0.6s ease-in;
+}
+
+.folio {
+  font: normal 380 30px/40px var(--roboto);
+  letter-spacing: 4px;
+}
+.folio-a {
+  font: normal 380 18px/40px var(--roboto);
+}
+.site-main .subscribe-us-area .subscribe {
+  background: url(../img/subscribe-bg.png) no-repeat;
+  padding: 7rem 0;
+  margin: 3rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+  font: normal 700 30px/ 30px var(--roboto);
+  color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p {
+  color: whitesmoke;
+  padding: 1rem 4rem;
+}
+.col {
+  font-family: var(--roboto);
+  cursor: pointer;
+}
+.col:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
+  font-weight: 500;
+  color: black;
+}
+.socials {
+  padding-top: 6rem;
+}
+.socials a > i {
+  font-size: 22px;
+  color: whitesmoke;
+  padding: 2rem;
+}
+.socials a > i:hover {
+  color: black;
+  transform: scale(1.3);
+  transition: transform 0.4s ease-in-out;
+  font-weight: 500;
+}
+.footer {
+  background: url(../img/footer-bg.png) no-repeat;
+  padding-top: 8rem;
+}
+.ahoo{
+  color: var(--primary-color);
+}
+
