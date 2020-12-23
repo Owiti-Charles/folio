@@ -209,4 +209,9 @@ span {
 .ahoo{
   color: var(--primary-color);
 }
+.navbar-brand{
+  width: 139px;
+  height: 40px;
+  margin-top: -4rem;
+}
 
