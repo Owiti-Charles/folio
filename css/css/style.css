@@ -500,10 +500,17 @@ footer .credits a {
 }
 .navbar-brand > img {
   width: 60px;
+  @media (min-width: 768px){
+    width: 80px;
+  }
 }
 .navbar-brand {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   margin-top: 0 !important;
+  @media (min-width: 768px){
+    left: 0 !important;
+    justify-content: left !important;
+  }
 }
